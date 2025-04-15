@@ -1,0 +1,79 @@
+/* =============================
+         FORMULARIO DE radiosO
+============================= */
+.main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.radios {
+  padding: 60px;
+  background-image: url(../Image/japon3.png);
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  
+}
+
+.radios__title {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Estilos del mis radios */
+.radio-group {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+/* =============================
+         RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+  /* Adaptación del header si es necesario */
+  .header__topbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page__nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Reducir padding en el formulario en pantallas pequeñas */
+  .radios__form {
+    padding: 20px;
+  }
+}
+
+/* =============================
+         opciones de radio
+============================= */
+.radio-group {
+  margin-bottom: 20px;
+}
+
+
+label {
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+#resultado {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 10px;
+}

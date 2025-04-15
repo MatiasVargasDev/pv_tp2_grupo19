@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <!-- conjunto de caracteres-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicio al cliente</title>
+  <link rel="stylesheet" href="css/styleEjercicio21.css"> <!--link a un css externo-->
+  <link rel="stylesheet" href="css/allpages.css"> <!--link a un css externo-->
+  <!--link a un js externo-->
+</head>
+
+<body>
+  <header>
+    <nav class="barra__superior"> <!-- barra de navegacion superior-->
+      <div class="logo"> <!-- logo de la pagina -->
+        <img src="Image/japon2.png" alt="Logo de Japon" width="100px" height="70px"> <!-- logo de la pagina -->
+        <!-- display: block; + maring 0 auto; centrar imagen  -->
+      </div>
+      <div class="titulo__header"> <!-- titulo de la pagina -->
+        <h1>Japon un lugar para visitar</h1><!--siempre estara mi titulo-->
+      </div>
+    </nav>
+    <nav class="page__nav"> <!-- barra de navegacion inferior-->
+      <ul>
+        <li><a href="index.html" style="color: white;">Inicio</a></li>
+        <li> <a href="ejercicio21.html" style="color: white;">Mensajes</a> </li> <!-- lleva al ejercicio -->
+        <li> <a href="ejercicio21.html" style="color: white;">Ejercicio 21</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+
+
+    <section class="contact">
+
+      <!--https://javascript.info/events-change-input-->
+      <h2 class ="contact__title">Programacion Visual APU</h2>
+      
+      <p class="contact__text">Escribe un mensaje y lo veras en el texto de abajo</p>
+      <input type="text" id="mitexto" placeholder="Escribe tu mensaje aquí"> <!-- placeholder mensaje de espera -->
+      <h2 class="contact__title">Texto</h2>
+      <p id="result">
+        <!-- aqui se mostrara el texto que escriba el usuario en el input-->
+      </p>
+      
+    </section>
+
+
+  </main>
+  <footer class="footer">
+    © 2025 Mi Sitio Web. Todos los derechos reservados. 
+    <a href="#">Política de Privacidad</a>
+  </footer>
+
+
+  <script src="js/ejercicio21.js"></script>
+  <!-- es mejor mover esta línea al final del <body> para asegurarte de que el DOM esté completamente cargado antes de que el script se ejecute -->
+</body>
+
+</html>
+
+<!--Shift + alt + f para arreglar espaciado-->
