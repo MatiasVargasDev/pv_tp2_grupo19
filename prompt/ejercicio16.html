@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  </body>
+  <script>
+    const sumarRango = (num1, num2) => {
+      if (num1 > num2) {
+        return 0;
+      }
+      return num1 + sumarRango(num1 + 1, num2);
+    };
+
+    console.log(sumarRango(1, 5)); // 15
+  </script>
+</html>
+<!-- Escribir una función llamada sumarRango que reciba dos argumentos numéricos -->
+<!-- enteros: número inicial y número final. La función debe retornar la suma de los números -->
+<!-- en ese rango (incluyéndolos). -->
+<!-- El número inicial debe ser menor o igual que el número final. -->

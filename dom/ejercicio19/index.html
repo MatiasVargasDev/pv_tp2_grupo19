@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 19</title>
+</head>
+<script type="module" src="js/script.js">
+
+</script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  section {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  label {
+    margin: 5px 0;
+    font-weight: bold;
+    display: block;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+</style>
+
+<body>
+  <section>
+    <form id="formulario">
+      <fieldset>
+        <legend>Libreta Universitaria - DATOS</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="libreta">Libreta:</label>
+        <input type="text" id="libreta" name="libreta" required>
+
+        <button type="submit" id="btn">Enviar</button>
+      </fieldset>
+    </form>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 13</title>
+  </head>
+  <body>
+  </body>
+  <script>
+    const NUMERO = parseInt(prompt("Ingrese un número"));
+    const ISNUMBER = typeof NUMERO === "number";
+
+    if (ISNUMBER) {
+      if (NUMERO % 2 === 0) {
+        alert("El número es par");
+      } else {
+        alert("El número es impar");
+      }
+    } else {
+      alert("No es un número");
+    }
+  </script>
+</html>
+<!-- Solicitar al usuario que ingrese un número. -->
+<!-- Comparar si es par o no, usando un if/else determinar si es par que muestre un alert -->
+<!-- indicando que el número es par o sino mostrar un alert indicando que es impar. -->
