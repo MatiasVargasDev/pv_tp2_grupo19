@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <!-- conjunto de caracteres-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicio al cliente</title>
+  <link rel="stylesheet" href="css/styleEjercicio23.css"> <!--link a un css externo-->
+  <!--<link rel="stylesheet" href="styles.css"> <!--link a un css externo-->
+  <link rel="stylesheet" href="css/allpages.css"> <!--link a un css externo-->
+  <!--link a un js externo-->
+</head>
+
+<body>
+  <header>
+    <nav class="barra__superior"> <!-- barra de navegacion superior-->
+      <div class="logo"> <!-- logo de la pagina -->
+        <img src="Image/japon2.png" alt="Logo de Japon" width="100px" height="70px"> <!-- logo de la pagina -->
+        <!-- display: block; + maring 0 auto; centrar imagen  -->
+      </div>
+      <div class="titulo__header"> <!-- titulo de la pagina -->
+        <h1>Japon un lugar para visitar</h1><!--siempre estara mi titulo-->
+      </div>
+    </nav>
+    <nav class="page__nav"> <!-- barra de navegacion inferior-->
+      <ul>
+        <li><a href="index.html" style="color: white;">Inicio</a></li>
+        <li> <a href="ejercicio23.html" style="color: white;">Museo</a> </li>
+        <li> <a href="ejercicio23.html" style="color: white;">Ejercicio 23</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="radios">
+    <h2 class="radios__title">Selecciona tu lenguaje</h2>
+    <div class="radio-group">
+      <label><input type="radio" name="lenguaje" value="JavaScript"> JavaScript</label>
+      <label><input type="radio" name="lenguaje" value="Python"> Python</label>
+      <label><input type="radio" name="lenguaje" value="C++"> C++</label>
+    </div>
+    <p id="resultado">Seleccioná un lenguaje...</p>
+    </section>
+  </main>
+  <footer class="footer">
+    © 2025 Mi Sitio Web. Todos los derechos reservados. 
+    <a href="#">Política de Privacidad</a>
+  </footer>
+  <script src="js/ejercicio23.js"></script>
+  <!-- es mejor mover esta línea al final del <body> para asegurarte de que el DOM esté completamente cargado antes de que el script se ejecute -->
+</body>
+
+</html>
+

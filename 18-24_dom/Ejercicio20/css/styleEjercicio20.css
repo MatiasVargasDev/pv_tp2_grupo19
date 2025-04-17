@@ -1,0 +1,71 @@
+/* =============================
+         FORMULARIO DE CONTACTO
+============================= */
+.main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.contact {
+  padding: 20px;
+  
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+/* =============================
+         RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+  /* Adaptación del header si es necesario */
+  .header__topbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page__nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Reducir padding en el formulario en pantallas pequeñas */
+  .contact__form {
+    padding: 20px;
+  }
+}
+/* =============================
+         Listas
+============================= */
+
+.select__list {
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+.select__list:hover {
+  border-color: #007bff; /* Cambia el color del borde al pasar el mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+.select__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Opcional, si tienes varios select y quieres que estén en columna */
+  height: 100%; /* Ajusta según el diseño */
+  gap: 0.5rem;
+}
