@@ -67,8 +67,8 @@
 }
 
 #result {
-  font-weight: bold; /* Negrita para el texto*/
+  font-weight: bold;
   color: #af2727;
-  font-size: 2rem; /* Tamaño de fuente */
+  font-size: 2rem; 
   border: #bdc3c7 1px solid;
 }

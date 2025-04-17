@@ -25,8 +25,7 @@ header {
   color: white;
   padding: 30px 20px;
   font-size: 15px;
-  /* Opcional: se puede agregar display flex si es parte de la disposición interna */
-  /* align-items: center; */
+
 }
 
 /* Barras del header: Superior (logo + título) y Navegación inferior */
@@ -89,20 +88,19 @@ header {
            FOOTER
 ============================= */
 .footer {
-  background-color: #C70039; /* Rojo principal */
-  text-align: center; /* Centrar el contenido */
-  padding: 20px; /* Espaciado interno */
-  font-size: 0.9rem; 
+  background-color: #C70039; 
+  text-align: center; 
+  padding: 20px; 
   color: #ffffff; 
 }
 
 .footer a {
-  color: #ffcccb; /* Enlaces con un tono más claro del rojo */
-  text-decoration: none; /* Sin subrayado */
-  font-weight: bold; /* Resaltar los enlaces */
+  color: #ffcccb; 
+  text-decoration: none; 
+  font-weight: bold; 
 }
 
 .footer a:hover {
-  color: #ffffff; /* Cambiar a blanco al pasar el mouse */
+  color: #ffffff; 
   text-decoration: underline; 
 }

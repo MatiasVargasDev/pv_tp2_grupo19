@@ -33,8 +33,7 @@ function  cambiarCapitales(a) {
   option.textContent = capital;
   selectCapital.appendChild(option);
   
-  console.log('La capital de ' + pais + ' es ' + capital); // Muestra la capital en la consola
-  //console.log(typeof pais); // Verifica el tipo de dato de la variable pais
+  console.log('La capital de ' + pais + ' es ' + capital); // Muestra la capital en la 
 
 }
 
