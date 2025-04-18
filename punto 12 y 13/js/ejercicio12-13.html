@@ -1,0 +1,53 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 12 y 13</title>
+   <script>
+  // punto 12
+  const ParImpar = () => {
+        const numeroIngresado = prompt("Por favor, ingresa un número:");
+        
+        // Convertimos la entrada a un número (podría ser texto)
+        const numero = Number(numeroIngresado);
+        
+        // Verificamos si lo ingresado es realmente un número válido, si es NaN (Not a Number) lo consideramos inválido
+        if (isNaN(numero)) {
+            alert("Lo que ingresaste no es un número válido. Por favor, intenta de nuevo.");
+            return;
+        }
+        
+        // Análisis: Un número es par si al dividirlo por 2 el resto es 0
+        if (numero % 2 === 0) {
+            alert(¡El número ${numero} es PAR!);
+        } else {
+            alert(¡El número ${numero} es IMPAR!);
+        }
+        
+        console.log(El número ${numero} es ${numero % 2 === 0 ? 'PAR' : 'IMPAR'});
+        };
+        ParImpar();
+</script>
+
+ </head>
+ <body>
+  
+ 
+<script>
+
+  // punto 13
+  const mostrarArreglo = (arreglo) => {
+      arreglo.forEach(elemento => {
+          document.write(elemento + "<br>");
+      });
+  };
+
+  // Ejemplo de arreglo en cariable "numeros" y llamada a la función mostrarArreglo
+  const numeros = [10, 20, 30, 40, 50];
+  mostrarArreglo(numeros);
+</script>
+ </body>
+ </html>
+ 
