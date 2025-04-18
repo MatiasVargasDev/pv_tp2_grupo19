@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <h1>EJERCICIO 9 - Mensaje de bienvenida</h1>
+    <script>
+        const mostrarBienvenida = () => {
+        const nombreUsuario = prompt("Por favor, ingresa tu nombre:");
+        
+        // Verifica si el usuario ingresó un nombre, sino se le da la bienvenida de todas formas
+        if (nombreUsuario) {
+                alert(`Hola ${nombreUsuario}, bienvenido a Programación Visual!`);
+                console.log(`Hola ${nombreUsuario}, bienvenido a Programación Visual!`);
+            } else {
+                alert("No ingresaste tu nombre. ¡Bienvenido a Programación Visual de todas formas!");
+            }
+        };
+
+        mostrarBienvenida();
+    </script>
+</body>
+</html>

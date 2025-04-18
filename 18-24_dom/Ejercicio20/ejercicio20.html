@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"> <!-- conjunto de caracteres-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicio al cliente</title>
+  <link rel="stylesheet" href="css/styleEjercicio20.css"> <!--link a un css externo-->
+  <!--<link rel="stylesheet" href="styles.css"> <!--link a un css externo-->
+  <link rel="stylesheet" href="css/allpages.css"> <!--link a un css externo-->
+   <!--link a un js externo-->
+</head>
+
+<body>
+  <header>
+    <nav class="barra__superior"> <!-- barra de navegacion superior-->
+      <div class="logo"> <!-- logo de la pagina -->
+        <img src="Image/japon2.png" alt="Logo de Japon" width="100px" height="70px"> <!-- logo de la pagina -->
+        <!-- display: block; + maring 0 auto; centrar imagen  -->
+      </div>
+      <div class="titulo__header"> <!-- titulo de la pagina -->
+        
+        <h1>América un lugar para visitar</h1><!--siempre estara mi titulo-->
+      </div>
+    </nav>
+    <nav class="page__nav"> <!-- barra de navegacion inferior-->
+      <ul>
+        <li><a href="index.html" style="color: white;">Inicio</a></li>
+        <li> <a href="ejercicio20.html" style="color: white;">Museo</a> </li>
+        <li> <a href="ejercicio20.html" style="color: white;">Ejercicio 20</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="contact">
+      <h2 class="contact__title">
+        País y Capitales
+      </h2>
+      <div class="select__container">
+
+        <select name="select_pais" id="paises" class="select__list" onchange ="cambiarCapitales(this.value)">
+
+          <option value="" disabled selected>Selecciona un país</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="Peru">Peru</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Uruguay">Uruguay</option>
+
+        </select>
+
+        <select name="select__capital" id="capital" class="select__list">
+          <option value="">--Seleccione un pais--</option>
+          <option value="Buenos Aires">Buenos Aires</option>
+          <option value="Santiago">Santiago</option>
+          <option value="Lima">Lima</option>
+          <option value="Bogota">Bogota</option>
+          <option value="Asuncion">Asuncion</option>
+          <option value="Montevideo">Montevideo</option>
+        </select>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    © 2025 Mi Sitio Web. Todos los derechos reservados. 
+    <a href="#">Política de Privacidad</a>
+  </footer>
+
+</body>
+  <script src="js/ejercicio20.js"></script>
+</html>
+
+<!--Shift + alt + f para arreglar espaciado-->

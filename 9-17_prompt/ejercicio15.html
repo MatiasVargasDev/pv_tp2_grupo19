@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 15</title>
+  </head>
+  <body>
+  </body>
+  <script>
+    const retornarMes = (mes) => {
+      const meses = [
+        "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+        "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+      ];
+
+      return meses[mes - 1] || "No es un mes válido";
+    };
+    const NUMERO_MES = parseInt(prompt("Ingrese un número:"));
+
+    console.log(retornarMes(NUMERO_MES));
+  </script>
+</html>
+<!-- Escribir una función llamada retornar mes, que reciba un número entero y si -->
+<!-- corresponde a un mes del año devolver el nombre del mes, si no se cumple entonces -->
+<!-- mostrar un mensaje que no es un mes. -->

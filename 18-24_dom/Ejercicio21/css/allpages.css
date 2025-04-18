@@ -1,0 +1,108 @@
+/* =============================
+   RESET Y ESTILOS GLOBALES
+============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* =============================
+         HEADER (Banner)
+============================= */
+header {
+  /* Usamos un banner con imagen; se muestra en todas las páginas */
+  background-image: url("../Image/japon4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 30px 20px;
+  font-size: 15px;
+  /* Opcional: se puede agregar display flex si es parte de la disposición interna */
+  /* align-items: center; */
+}
+
+/* Barras del header: Superior (logo + título) y Navegación inferior */
+.barra__superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+.titulo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #070202;
+  margin: 0;
+}
+.titulo__header {
+  font-size: 30px;
+  font-weight: normal;
+  color: #070202; 
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  /* Sombra de texto para mayor legibilidad */
+}
+
+/* Navegación principal */
+.page__nav {
+  padding: 10px 20px;
+}
+.page__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;           /* Espacio uniforme entre botones */
+  justify-content: right;
+  align-items: center;
+}
+.page__nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 10px 18px;
+  background-color: #C70039; /* Rojo Japonés */
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.page__nav a:hover {
+  background-color: #900C3F;
+  transform: translateY(-2px);
+}
+
+/* =============================
+           FOOTER
+============================= */
+.footer {
+  background-color: #C70039; /* Rojo principal */
+  text-align: center; /* Centrar el contenido */
+  padding: 20px; /* Espaciado interno */
+  font-size: 0.9rem; 
+  color: #ffffff; 
+}
+
+.footer a {
+  color: #ffcccb; /* Enlaces con un tono más claro del rojo */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Resaltar los enlaces */
+}
+
+.footer a:hover {
+  color: #ffffff; /* Cambiar a blanco al pasar el mouse */
+  text-decoration: underline; 
+}

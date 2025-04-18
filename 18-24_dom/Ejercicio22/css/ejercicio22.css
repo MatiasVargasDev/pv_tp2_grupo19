@@ -1,0 +1,74 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la sección de entrada */
+.input-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.character-counter {
+    text-align: right;
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Estilos para la sección de salida */
+.output-section {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.output-text {
+    min-height: 50px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+/* Clase para cuando el texto supera los 20 caracteres */
+.text-long {
+    background-color: #ffe8e8;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio16 MV</title>
+</head>
+<body>
+  <script>
+
+    let a = parseInt(prompt("Introduce el primer número:"));
+    let b = parseInt(prompt("Introduce el segundo número:"));
+    function sumarRango(a, b) {
+      let suma = 0;
+      for (let i = a; i <= b; i++) {
+        suma = suma + i;
+      }
+      return suma;
+    }
+    alert("La suma de los números entre " + a + " y " + b + " es: " + sumarRango(a, b));
+  </script>
+</body>
+</html>
+
+
+

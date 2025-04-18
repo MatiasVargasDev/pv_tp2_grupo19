@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 12</title>
+</head>
+<body>
+    <h1>EJERCICIO 12 - Solicitar al usuario que ingrese un número</h1>
+    <script>
+        // Función flecha para verificar si un número es par o impar
+        const ParImpar = () => {
+        const numeroIngresado = prompt("Por favor, ingresa un número:");
+        
+        // Convertimos la entrada a un número (podría ser texto)
+        const numero = Number(numeroIngresado);
+        
+        // Verificamos si lo ingresado es realmente un número válido, si es NaN (Not a Number) lo consideramos inválido
+        if (isNaN(numero)) {
+            alert("Lo que ingresaste no es un número válido. Por favor, intenta de nuevo.");
+            return;
+        }
+        
+        // Análisis: Un número es par si al dividirlo por 2 el resto es 0
+        if (numero % 2 === 0) {
+            alert(`¡El número ${numero} es PAR!`);
+        } else {
+            alert(`¡El número ${numero} es IMPAR!`);
+        }
+        
+        console.log(`El número ${numero} es ${numero % 2 === 0 ? 'PAR' : 'IMPAR'}`);
+        };
+
+        ParImpar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* =============================
+         FORMULARIO DE CONTACTO
+============================= */
+.main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.contact {
+  padding: 20px;
+}
+
+.contact__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact__text {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilos del formulario */
+.contact__form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 px rgba(0,0,0,0.1);
+}
+
+
+
+/* =============================
+         RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+  /* Adaptación del header si es necesario */
+  .header__topbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .page__nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Reducir padding en el formulario en pantallas pequeñas */
+  .contact__form {
+    padding: 20px;
+  }
+}
+
+/* =============================
+         Mi texto
+============================= */
+.contact input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 1rem;
+  margin-bottom: 2%;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1.3rem;
+}
+
+#result {
+  font-weight: bold; /* Negrita para el texto*/
+  color: #af2727;
+  font-size: 2rem; /* Tamaño de fuente */
+  border: #bdc3c7 1px solid;
+}

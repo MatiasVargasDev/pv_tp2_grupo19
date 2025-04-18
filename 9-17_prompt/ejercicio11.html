@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 11 MV</title>
+</head>
+<body>
+  
+  <script>
+    
+    let km = parseFloat(prompt("Numero de Kilometos recorridos: "));
+    let l_consumidos = parseFloat(prompt("Numero de litros consumidos: "));
+
+    if (isNaN(km) || isNaN(l_consumidos)) {
+      alert("Por favor, introduce números válidos.");
+    } else if (km <= 0 || l_consumidos <= 0) {
+      alert("Los valores deben ser mayores que cero.");
+    } else {
+      alert("Consumo medio: " + (km / l_consumidos) + " km/litro");
+    }
+
+  </script>
+</body>
+</html>
