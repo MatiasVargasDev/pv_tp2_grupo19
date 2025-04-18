@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 10</title>
+  </head>
+  <body>
+  </body>
+  <script>
+    const NUMEROS = [];
+
+    for (let i = 0; i < 3; i++) {
+      let numeroValido = false;
+      let numero;
+
+      while (!numeroValido) {
+        const entrada = prompt(`Ingrese el número entero ${i + 1}:`);
+        numero = parseInt(entrada);
+
+        if (!isNaN(numero)) {
+          numeroValido = true;
+        } else {
+          alert("⚠️ El valor ingresado no es un número entero válido. Inténtelo de nuevo.");
+        }
+      }
+
+      NUMEROS.push(numero);
+    }
+
+    const PROMEDIO = NUMEROS.reduce((acc, n) => acc + n, 0) / 3;
+    alert(`✅ El promedio de los números ingresados es: ${PROMEDIO}`);
+  </script>
+</html>
+<!-- Solicitar al usuario que ingrese tres números enteros, luego mostrar como resultado el -->
+<!-- promedio de los tres. -->
+<!-- El promedio de tres números se calcula sumando los tres números y dividiendo entre 3. -->
