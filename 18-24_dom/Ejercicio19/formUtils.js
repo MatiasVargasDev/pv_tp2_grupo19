@@ -9,5 +9,5 @@ export const isEmpty = (value) => {
 
 
 export const buildStudentMessage = (nombre, apellido, libreta) => {
-    return Nombre: ${nombre}\nApellido: ${apellido}\nLibreta Universitaria: ${libreta};
+    return `Nombre: ${nombre}\nApellido: ${apellido}\nLibreta Universitaria: ${libreta}`;
 };
