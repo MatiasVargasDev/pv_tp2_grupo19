@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Comprobación de Número Par/Impar</h1>
+    <button onclick="solicitarNumero()">Ingresar Número</button>
+  
+    <hr>
+  
+    <h1>Mostrar Elementos de un Arreglo</h1>
+    <button onclick="mostrarArregloEjemplo()">Mostrar Arreglo</button>
+    <div id="contenedorArray"></div>
+  
+    <script>
+      // Función flecha para verificar si un número es par o impar
+      const verificarParImpar = (num) => {
+        // Si el número ingresado no es un número válido, mostramos una alerta de error
+        if (isNaN(num)) {
+          alert("Por favor, ingresa un número válido.");
+          return;
+        }
+  
+        // Determinamos si es par o impar y mostramos la alerta correspondiente
+        if (num % 2 === 0) {
+          alert(`El número ${num} es PAR.`);
+        } else {
+          alert(`El número ${num} es IMPAR.`);
+        }
+      };
+  
+      // Función que solicita un número al usuario mediante prompt
+      const solicitarNumero = () => {
+        // Pedimos el número al usuario y lo convertimos a entero
+        const num = parseInt(prompt("Ingresa un número:"), 10);
+        
+        // Verificamos que sea un número válido antes de continuar
+        if (!isNaN(num)) {
+          verificarParImpar(num);
+        } else {
+          alert("Entrada no válida. Inténtalo nuevamente.");
+        }
+      };
+  
+      // Función flecha para mostrar un arreglo en pantalla
+      const mostrarArreglo = (arreglo) => {
+        // Seleccionamos el contenedor donde mostraremos los elementos
+        const contenedor = document.getElementById("contenedorArray");
+  
+        // Limpiamos cualquier contenido previo
+        contenedor.innerHTML = "<strong>Arreglo:</strong>";
+  
+        // Iteramos sobre el arreglo y creamos un párrafo para cada elemento
+        arreglo.forEach(elemento => {
+          const parrafo = document.createElement("p");
+          parrafo.textContent = elemento;
+          contenedor.appendChild(parrafo);
+        });
+      };
+  
+      // Función de prueba para ejecutar mostrarArreglo con un arreglo ejemplo
+      const mostrarArregloEjemplo = () => {
+        // Arreglo de números de ejemplo
+        const numeros = [5, 10, 15, 20, 25];
+        mostrarArreglo(numeros);
+      };
+    </script>
+
+
+</body>
+</html>
