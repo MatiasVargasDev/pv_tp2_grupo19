@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  </body>
+  <script>
+    const contarLetraA = (str) => {
+    let contador = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (str[i].toLowerCase() === 'a') {
+        contador++;
+      }
+    }
+    return contador;
+  };
+  console.log(contarLetraA("Hola, soy un string con varias letras a."));
+  </script>
+</html>
+<!-- Escribir una función llamada contarLetraA que reciba un string y retorne el número de -->
+<!-- veces que aparece la letra "a". -->
